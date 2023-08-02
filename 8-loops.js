@@ -5,10 +5,10 @@ const listaDeDestinos = new Array(
     `Rio de Janeiro`
 );
 
-const idadeComprador = 18;
+const idadeComprador = 17;
 const estaAcompanhada = false;
 let temPassagemComprada = false;
-const destino = "Salvador";
+const destino = "Curitiba";
 
 console.log("\n Destinos possíveis:");
 console.log(listaDeDestinos);
@@ -26,3 +26,16 @@ while(contador<3){
 }
 
 console.log("Destino existe: ", destinoExiste);
+
+if(podeComprar && destinoExiste){
+    console.log("Boa Viagem");
+}else{
+    console.log("Desculpe tivemos um erro!");
+}
+
+for(let i = 0 ; i < 3 ; i++ ){
+    if(listaDeDestinos[i] == destino){
+        destinoExiste = true;
+    }
+   
+}
